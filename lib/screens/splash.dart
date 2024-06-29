@@ -31,9 +31,21 @@ class _ScreenSplashState extends State<ScreenSplash> {
   
   Widget build(BuildContext context) {
     return  Scaffold(backgroundColor: Colors.black,
-      body: Center(
-        child: Image.asset('C:/Users/abhij/Documents/login_page_flutter-master/assets/AppXplorium.jpg',height: 500,)
-        ,),
+      body: Column(
+        children: [
+          Center(
+            child: Image.asset('C:/Users/abhij/Documents/login_page_flutter-master/assets/AppXplorium.jpg',height: 500,)
+            ,),
+            SizedBox(
+              width: 180,
+              child: LinearProgressIndicator(
+                color: Colors.white,
+                backgroundColor: Colors.black,
+              ),
+            )
+        ],
+      ),
+        
     );
   }
 

@@ -27,6 +27,7 @@ class ScreenHome extends StatelessWidget {
         itemCount: users.length,
         itemBuilder: (context, index) {
           return Card(
+            elevation: 5,
             child: ListTile(
               onTap: () {
                 Navigator.push(context,
@@ -63,7 +64,7 @@ class ScreenHome extends StatelessWidget {
     showDialog(
         context: context,
         builder: (context) => AlertDialog(
-              title: const Text("Do you want to exit"),
+              title: const Text("Do you want to Log Out"),
               actions: [
                 TextButton(
                   onPressed: () {
